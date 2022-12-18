@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+#header {
+  z-index: 4;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#header > div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+#header > div.container .logo {
+  height: 60px;
+}
+
+#header > div.container .logo img {
+  width: auto;
+  height: 50px;
+}
+
+#header > div.container .menu {
+  height: 60px;
+}
+
+#header > div.container .menu ul {
+  height: 60px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header > div.container .menu ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #28A0F8;
+}
+
+#header > div.container .menu ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: #257AF9;
+}
+
+#header > div.container .menu ul li a:hover, #header > div.container .menu ul li a:active {
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#header > div.container .menu ul li:hover, #header > div.container .menu ul li:active {
+  background: #28A0F8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#header.sticky {
+  background-color: rgba(32, 32, 32, 0.788);
+  height: 70px;
+}
+
+#header.sticky > div.container .logo {
+  height: 60px;
+}
+
+#header.sticky > div.container .logo img {
+  width: auto;
+  height: 50px;
+}
+
+#tabs {
+  position: relative;
+}
+
+#tabs img {
+  max-width: 100%;
+  height: auto;
+}
+
+#big-title {
+  z-index: 2;
+  top: 500px;
+  right: 500px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#page-1 {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#page-1 .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+#page-1 .title h1 {
+  font-weight: 700;
+}
+
+#page-1 > div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-1 > div.container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#page-1 > div.container > div:hover, #page-1 > div.container > div:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#page-1 > div.container > div img {
+  max-width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  border-radius: 100%;
+}
+
+#page-1 > div.container > div img:hover, #page-1 > div.container > div img:active {
+  -webkit-box-shadow: 0px 0px 9px gray;
+          box-shadow: 0px 0px 9px gray;
+}
+
+#page-1 > div.container > div a {
+  text-decoration: none;
+  color: black;
+}
+
+#page-2 {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#page-2 .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+#page-2 .title h1 {
+  font-weight: 700;
+}
+
+#page-2 > div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-2 > div.container > div {
+  border: 1px solid #686868;
+  text-align: left;
+  background: #fff;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#page-2 > div.container > div:hover, #page-2 > div.container > div:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 0px 9px gray;
+          box-shadow: 0px 0px 9px gray;
+}
+
+#page-2 > div.container > div a {
+  text-decoration: none;
+  color: black;
+}
+
+#page-2 > div.container > div img {
+  max-width: 200px;
+  height: auto;
+}
+
+#page-2 > div.container > div .text {
+  margin: 5px;
+}
+
+#page-3 {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#page-3 .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+#page-3 .title h1 {
+  font-weight: 700;
+}
+
+#page-3 > div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-3 > div.container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#page-3 > div.container .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid dimgray;
+}
+
+#page-3 > div.container .menu ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#page-3 > div.container .menu ul li a {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #257AF9;
+}
+
+#page-3 > div.container .menu ul li a:hover, #page-3 > div.container .menu ul li a:active {
+  border-bottom: 2px solid #257AF9;
+}
+
+#page-4 {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#page-4 .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+#page-4 .title h1 {
+  font-weight: 700;
+}
+
+#page-4 > div.container div {
+  border: 1px solid #686868;
+  border-bottom: 4px solid #28A0F8;
+  padding: 50px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+#page-4 > div.container div h2 {
+  color: #28A0F8;
+  font-weight: 700;
+}
+
+#subscribe {
+  background: #EF9B1E;
+  padding: 100px;
+}
+
+#subscribe > div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#subscribe > div.container h4 {
+  color: #fff;
+  font-weight: 700;
+}
+
+#subscribe > div.container .add input {
+  padding: 0.5rem 8rem 0.5rem 8rem;
+  font-size: 20px;
+}
+
+#subscribe > div.container .add button {
+  padding: 0.5rem 10rem 0.5rem 10rem;
+  font-size: 20px;
+}
+
+#footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #257AF9;
+}
+
+#footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+#footer .row a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer .row a:hover {
+  border-bottom: 1px solid white;
+}
+
+#footer .copyright {
+  text-align: center;
+  border-bottom: 1px solid #2c2c2c;
+  line-height: 60px;
+  font-size: 0.8rem;
+}

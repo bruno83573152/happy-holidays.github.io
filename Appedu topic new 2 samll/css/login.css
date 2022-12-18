@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: #f3f3f3;
+}
+
+#header {
+  z-index: 4;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#header > div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+#header > div.container .logo {
+  height: 60px;
+}
+
+#header > div.container .logo img {
+  width: auto;
+  height: 50px;
+}
+
+#header > div.container .menu {
+  height: 60px;
+}
+
+#header > div.container .menu ul {
+  height: 60px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header > div.container .menu ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #257AF9;
+}
+
+#header > div.container .menu ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: #257AF9;
+}
+
+#header > div.container .menu ul li a:hover, #header > div.container .menu ul li a:active {
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#header > div.container .menu ul li:hover, #header > div.container .menu ul li:active {
+  background: #257AF9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#header.sticky {
+  background-color: rgba(32, 32, 32, 0.788);
+  height: 70px;
+}
+
+#header.sticky > div.container .logo {
+  height: 60px;
+}
+
+#header.sticky > div.container .logo img {
+  width: auto;
+  height: 50px;
+}
+
+#login-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 50px 500px 50px;
+}
+
+#login-main > div.container {
+  background: #fff;
+  padding: 0px 20px 0px 20px;
+  max-width: 500px;
+  -webkit-box-shadow: 0px 0px 9px gray;
+          box-shadow: 0px 0px 9px gray;
+}
+
+#login-main > div.container .login {
+  padding: 30px 0px 30px 0px;
+}
+
+#login-main > div.container .login .title {
+  margin-bottom: 10px;
+  margin: 20px 0px 20px 0px;
+}
+
+#login-main > div.container .login .title h3 {
+  font-weight: 700;
+}
+
+#login-main > div.container .login .change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0px 20px 0px;
+}
+
+#login-main > div.container .login .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0px 20px 0px;
+}
+
+#login-main > div.container .login .email label {
+  margin-bottom: 5px;
+}
+
+#login-main > div.container .login .password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0px 20px 0px;
+}
+
+#login-main > div.container .login .password label {
+  margin-bottom: 5px;
+}
+
+#login-main > div.container .login .forget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0px 20px 0px;
+}
+
+#login-main > div.container .login .forget a {
+  text-decoration: none;
+}
+
+#login-main > div.container .login .or {
+  text-align: center;
+}
+
+#login-main > div.container .login .privacy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+#login-main > div.container .login .privacy a {
+  text-decoration: none;
+}
+
+#footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #257AF9;
+}
+
+#footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+#footer .row a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer .row a:hover {
+  border-bottom: 1px solid white;
+}
+
+#footer .copyright {
+  text-align: center;
+  border-bottom: 1px solid #2c2c2c;
+  line-height: 60px;
+  font-size: 0.8rem;
+}
